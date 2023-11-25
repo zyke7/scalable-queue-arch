@@ -10,7 +10,7 @@ export interface BaseConfigType {
 }
 
 export interface WorkerConfigType extends BaseConfigType {
-  isSandboxed?: boolean
+  isSandboxed?: boolean,
   concurrency?: number
 }
 
