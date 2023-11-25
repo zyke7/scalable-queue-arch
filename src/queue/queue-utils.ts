@@ -1,6 +1,6 @@
 import { SendEmailWorker } from './jobs';
 
-const JobMap = new Map([
+const WorkerMap = new Map([
   ['SendEmail', SendEmailWorker]
 ])
 
@@ -9,7 +9,7 @@ const JobMap = new Map([
  */
 
 export function initializeJobs() {
-  JobMap.forEach((worker) => {
+  WorkerMap.forEach((worker) => {
     worker.on('error', err => {
       console.error(err);
     });
