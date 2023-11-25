@@ -1,0 +1,1 @@
+export { default as SendEmailWorker } from './send-email/send-email.worker';
