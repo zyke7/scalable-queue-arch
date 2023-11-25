@@ -8,7 +8,7 @@ const JobMap = new Map([
  * Initiate workers by binding and event listener to it
  */
 
-export function initiateJobs() {
+export function initializeJobs() {
   JobMap.forEach((worker) => {
     worker.on('error', err => {
       console.error(err);
