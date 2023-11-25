@@ -1,7 +1,7 @@
 import { Server } from 'http';
 
 import app from './app';
-// import { QueueUtils } from './queue';
+import { QueueUtils } from './queue';
 
 const PORT = process.env.PORT || 3000;
 let server: Server;
@@ -9,7 +9,8 @@ let server: Server;
 
 const listen = () => {
   server = app.listen(PORT, () => {
-    console.log(`Server running at port ${PORT}`)
+    QueueUtils.initiateJobs();
+    console.log(`Server running at port ${PORT}`);
   })
 };
 
