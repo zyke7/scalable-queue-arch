@@ -5,7 +5,7 @@ const JobMap = new Map([
 ])
 
 /**
- * Initialize workers by binding and event listener to it
+ * Initialize workers by binding an event listener to it
  */
 
 export function initializeJobs() {
