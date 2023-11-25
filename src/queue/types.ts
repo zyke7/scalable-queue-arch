@@ -1,4 +1,4 @@
-import { ConnectionOptions } from "bullmq";
+import { ConnectionOptions, DefaultJobOptions } from "bullmq";
 import { JobsEnum, QueuesEnum } from './constants';
 
 export type JobType = keyof typeof JobsEnum;
@@ -11,9 +11,9 @@ export interface BaseConfigType {
 
 export interface WorkerConfigType extends BaseConfigType {
   isSandboxed?: boolean
+  concurrency?: number
 }
 
 export interface QueueConfigType extends BaseConfigType {
-
+  defaultJobOptions?: DefaultJobOptions
 }
-

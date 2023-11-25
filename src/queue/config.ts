@@ -8,4 +8,3 @@ export const connection: ConnectionOptions = {
 export default {
   connection
 }
-

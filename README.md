@@ -1,1 +1,1 @@
-# scalable-queue-arch
+# Scalable Sandboxed Queue Architecture in Typescript
