@@ -1,0 +1,23 @@
+{
+  "name": "scalable-queue-arch",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "concurrently \"npx tsc --watch\" \"nodemon -q --env-file .env dist/index.js \""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/express": "^4.17.21",
+    "@types/node": "^20.10.0",
+    "concurrently": "^8.2.2",
+    "nodemon": "^3.0.1",
+    "typescript": "^5.3.2"
+  },
+  "dependencies": {
+    "bullmq": "^4.14.2",
+    "express": "^4.18.2"
+  }
+}
