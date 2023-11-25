@@ -2,7 +2,7 @@ import { SendEmailWorker } from './jobs';
 
 const WorkerMap = new Map([
   ['SendEmail', SendEmailWorker]
-])
+]);
 
 /**
  * Initialize workers by binding an event listener to it
