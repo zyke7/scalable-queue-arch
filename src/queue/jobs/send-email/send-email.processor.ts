@@ -9,9 +9,13 @@ export default class SendEmailProcessor implements ProcessorDef {
     // Actual Code to send emails
     console.log({ job })
   }
-
-  failed(job?: Job) { }
-
-  completed(job: Job) { }
+  
+  failed(job?: Job) { 
+    console.log({ job })
+  }
+  
+  completed(job: Job) { 
+    console.log({ job })
+  }
 
 }
