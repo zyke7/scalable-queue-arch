@@ -13,4 +13,11 @@ const listen = () => {
   })
 };
 
+process.on('SIGTERM', () => {
+  console.log('SIGTERM received');
+  if (server) {
+    server.close();
+  }
+});
+
 listen();
