@@ -6,7 +6,7 @@ const instance = new SendEmailProcessor();
 
 const { queueName, connection, isSandboxed } = sendEmailConfig;
 
-const processor = isSandboxed ? `${__dirname}/test.slave.js` : instance.handle;
+const processor = isSandboxed ? `${__dirname}/send-email.slave.js` : instance.handle;
 
 const worker = new Worker(queueName, processor, {
   connection
